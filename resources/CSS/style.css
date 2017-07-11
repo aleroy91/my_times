@@ -6,23 +6,25 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px 10px 0;
+  padding: 10px 30px 10px 0;
   border-bottom: thin solid black;
   position: fixed;
   z-index: 1;
   background-color: white;
   width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .aks {
   align-items: center;
   display: flex;
-  border: thin solid black;
-  padding-left: 20px;
+  padding: 0 0 0 20px;
 }
 
 .myt {
   padding-left: 10px;
+  align-items: center;
 }
 
 .child {
@@ -39,9 +41,64 @@
 }
 
 .column {
-  border: thin solid black;
   flex-direction: column;
   display: inline-flex;
+}
+
+.minicontainer {
+  display: flex;
+}
+
+.miniitem1 {
+  padding-right: 30px;
+}
+
+.miniitem2 {
+  padding-right: 30px;
+}
+
+.drinks {
+  background-image: url("../Images/drinks.png");
+  display: flex;
+  height: 300px;
+}
+
+.dri {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+
+.cats {
+  background-image: url("../Images/cat_ceo.png");
+  height: 300px;
+}
+
+.autumn {
+  background-image: url("../Images/autumn.png");
+  height: 300px;
+}
+
+.photo {
+  background-image: url("../Images/photo.png");
+  height: 300px;
+}
+
+.imgtext {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  align-items: flex-start;
+  display: block;
+}
+
+.txt {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
 
 .column.large {
@@ -58,6 +115,21 @@
   width: 240px;
   }
 
-div {
-  border: thin solid black;
+.nb {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.newsbites {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+}
+
+.newsb {
+margin: 0;
+  padding: 15px;
+  border-bottom: thin solid black;
 }
