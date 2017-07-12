@@ -1,3 +1,7 @@
+body {
+  margin: 0 0 0 0;
+}
+
 .container {
   font-family: Verdana;
   font-size: 14px;
@@ -42,7 +46,7 @@
 
 .column {
   flex-direction: column;
-  display: inline-flex;
+  display: inline;
 }
 
 .minicontainer {
@@ -61,6 +65,9 @@
   background-image: url("../Images/drinks.png");
   display: flex;
   height: 300px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .dri {
@@ -73,16 +80,9 @@
 .cats {
   background-image: url("../Images/cat_ceo.png");
   height: 300px;
-}
-
-.autumn {
-  background-image: url("../Images/autumn.png");
-  height: 300px;
-}
-
-.photo {
-  background-image: url("../Images/photo.png");
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .imgtext {
@@ -91,8 +91,25 @@
   font-size: 30px;
   color: white;
   text-align: center;
-  align-items: flex-start;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.autumn {
+  background-image: url("../Images/autumn.png");
+  height: 300px;
+  margin-bottom: 30px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.photo {
+  background-image: url("../Images/photo.png");
+  height: 300px;
+  margin-bottom: 70px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .txt {
@@ -104,15 +121,21 @@
 .column.large {
   width: 630px;
   margin-right: 35px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
-.column.medium {
+.column.medium.txt {
   width: 300px;
   margin-right: 35px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .column.small {
   width: 240px;
+  flex-grow: 0;
+  flex-shrink: 0;
   }
 
 .nb {
@@ -129,7 +152,36 @@
 }
 
 .newsb {
-margin: 0;
+  margin: 0;
   padding: 15px;
   border-bottom: thin solid black;
+}
+
+.footer {
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  bottom: 0;
+  left: 0;
+}
+
+.mytf {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding-right: 20px;
+  border-right: 2px solid white;
+  margin-right: 15px;
+}
+
+.copyright {
+  display: block;
+  justify-content: center;
 }
