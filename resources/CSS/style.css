@@ -41,7 +41,6 @@ body {
 .container2 {
   display: flex;
   padding: 120px 0 0 0;
-  justify-content: center;
 }
 
 .column {
@@ -65,7 +64,7 @@ body {
   background-image: url("../Images/drinks.png");
   display: flex;
   height: 300px;
-  text-align: center;
+  text-align: left;
   flex-direction: column;
   justify-content: center;
 }
